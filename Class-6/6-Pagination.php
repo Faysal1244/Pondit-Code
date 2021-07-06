@@ -6,7 +6,6 @@ $array = range(1,100);
      global $array;
 
      print_r($array) . PHP_EOL;
-
  }
 
  echo "Done";

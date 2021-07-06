@@ -1,5 +1,4 @@
 <?php 
-
 $array = range(1,100);
  
  function paginate($offset, $perpage)
@@ -8,10 +7,7 @@ $array = range(1,100);
 
      print_r($array) . PHP_EOL;
 
-   
-
  }
-
 
  echo "Done";
  paginate(0,5);

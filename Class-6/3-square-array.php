@@ -3,7 +3,6 @@
 
  $length = count($num);
 
-
  foreach($num as $val)
  {
      echo $val*$val . " ";

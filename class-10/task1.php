@@ -2,7 +2,6 @@
    class Product{
       private $name;
 
-
       public function setName($name){
          $this->name = $name;
       }
@@ -19,4 +18,3 @@
    $Product2 = new Product();
    $Product2->setName('IPhone 12 pro');
    echo $Product2->getName();
-?>

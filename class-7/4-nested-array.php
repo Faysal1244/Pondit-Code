@@ -1,17 +1,49 @@
-<?php 
- $a= [1, 2, [3, 4], 5, [6, [7, 8, 9], 0]];
+<?php
 
 
-$flat = array_merge($a);
+$marks = array(
+	
+	// Ankit will act as key
+	"Ankit" => array(
+		
+		// Subject and marks are
+		// the key value pair
+		"C" => 95,
+		"DCO" => 85,
+		"FOL" => 74,
+	),
+		
+	// Ram will act as key
+	"Ram" => array(
+		
+		// Subject and marks are
+		// the key value pair
+		"C" => 78,
+		"DCO" => 98,
+		"FOL" => 46,
+	),
+	
+	// Anoop will act as key
+	"Anoop" => array(
+		
+		// Subject and marks are
+		// the key value pair
+		"C" => 88,
+		"DCO" => 46,
+		"FOL" => 99,
+	),
+);
 
-
-$singleArray = []; 
-foreach ($parentArray as $a)
-{ 
-    foreach ($a as $value) 
-    { 
-    $singleArray[] = $value; 
-    } 
+// Accessing the array element
+// using dimensions
+	
+// It will display the marks of
+// Ankit in C subject
+echo $marks['Ankit']['C'] . " ";
+	
+// Accessing array elements using for each loop
+foreach($marks as $mark) {
+	echo $mark['C']. " ".$mark['DCO']." ".$mark['FOL']."";
 }
-print_r($single);
+	
 ?>

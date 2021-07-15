@@ -21,20 +21,18 @@ class Vehicle
 }
 
 class Bus extends Vehicle
-{ 
-
-    
-function __construct($name, $max_speed, $milage, $seating_capacity)
+{
+    function __construct($name, $max_speed, $milage, $seating_capacity)
     {
         $this->name = $name;
         $this->max_speed = $max_speed;
         $this->milage = $milage;
         $this->seating_capacity = $seating_capacity;
     }
-    
-   public function Fare()
+
+    public function Fare()
     {
-        if($this->seating_capacity > 50) {
+        if ($this->seating_capacity > 50) {
             echo " Sorry , Seating Capacity is only 50";
         } else {
             $charge = $this->seating_capacity * 100 * 0.1;
@@ -42,6 +40,6 @@ function __construct($name, $max_speed, $milage, $seating_capacity)
     }
 }
 
-$b = new Bus("Volvo",60,50,50);
+$b = new Bus("Volvo", 60, 50, 50);
 
 $b->Fare();
